@@ -1,0 +1,243 @@
+body{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    background-color: #f5f5f5; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    z-index: 999; 
+  }
+  
+  .logo {
+    margin: 0;
+    font-size: 24px;
+    
+  }
+  
+  .ul-opt {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .ul-opt li {
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .ul-opt li:hover {
+    color: #ffc107; 
+  }
+
+  .main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 50px; */
+    width: 100%;
+    margin: auto;
+  }
+  .main-one{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    
+  }
+  
+  .card-tweet , .card-insta, .card-youtube  , .card-linkedIn,.card-upwork,.card-gitHub{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    min-height: calc(100vh - 215px);
+    justify-content: center;
+    padding: 0px 15px;
+    width: 33.3333333333%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(23 62 65 / 57%);
+    border: none;
+  }
+  .card-tweet:hover{
+     background-color: rgb(0, 157, 255);
+     color: #f5f5f5;
+  }
+  .card-insta:hover{
+    background-color: rgb(241, 109, 131);
+    color: #f5f5f5;
+  }
+  .card-youtube:hover{
+    background-color: rgb(213, 52, 52);
+    color: #f5f5f5;
+  }
+  .card-gitHub:hover{
+    background-color: rgba(116, 116, 116, 0.568);
+    color: white;
+  }
+  .card-linkedIn:hover{
+    background-color: rgba(98, 158, 226, 0.874);
+    color: #f5f5f5;
+  }
+  .card-upwork:hover{
+    background-color: rgb(61, 230, 61);
+    color: #f5f5f5;
+  }
+  .btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .img-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .img{
+    max-width: 60px;
+  }
+  .btn-tweet{
+    border: none;
+    background: rgb(2 83 134 / 82%);
+    /* max-width: 78px; */
+    padding: 10px 35px;
+    border-radius: 5px;
+    color: aliceblue;
+    font-family: sans-serif;
+  }
+  .btn-tweet:hover{
+    background: rgba(104, 191, 245, 0.82);
+    color: rgb(2 83 134 / 82%);
+  }
+  .btn-insta{
+    border: none;
+    background: rgba(192, 88, 223, 0.82);
+    /* max-width: 78px; */
+    padding: 10px 35px;
+    border-radius: 5px;
+    color: aliceblue;
+    font-family: sans-serif;
+  }
+  .btn-github{
+     background-color: black;
+     color: #f5f5f5;
+     padding: 10px 35px;
+    border-radius: 5px;
+   
+    font-family: sans-serif;
+    border: none;
+     
+  }
+  .btn-upwork{
+    background-color: rgb(45, 143, 30);
+    color: #f5f5f5;
+    padding: 10px 35px;
+    border-radius: 5px;
+   
+    font-family: sans-serif;
+    border: none;
+  }
+  .btn-linkedin{
+    background-color: rgb(23, 101, 137);
+    color: white;
+    padding: 10px 35px;
+    border-radius: 5px;
+   
+    font-family: sans-serif;
+    border: none;
+  }
+  .btn-github:hover{
+    background-color: rgb(125, 124, 124);
+    color: #131212;
+  }
+  .btn-linkedin:hover{
+    background-color: rgb(102, 202, 248);
+     color: rgb(1, 52, 107);
+  }
+  .btn-upwork:hover:hover{
+    background-color: rgb(151, 244, 137);
+    color: #03450f;
+  }
+  .btn-insta:hover{
+    background: rgba(216, 136, 241, 0.82);
+    color:rgba(74, 23, 90, 0.82);
+  }
+  .btn-yt{
+    border: none;
+    background: rgba(188, 72, 72, 0.82);
+    /* max-width: 78px; */
+    padding: 10px 35px;
+    border-radius: 5px;
+    color: aliceblue;
+    font-family: sans-serif;
+  }
+  .btn-yt:hover{
+    background: rgba(241, 117, 117, 0.82);
+    color:rgba(117, 26, 26, 0.82);
+  }
+  .para{
+    font-family: monospace;
+    text-align: justify;
+    /* color: rgba(7, 72, 112, 0.82); */
+  }
+  
+  .heading{
+    font-family: system-ui;
+    letter-spacing: 10px;
+    color: black;
+  }
+ 
+.notification-card {
+    position: sticky;
+}
+
+.notification-card .icon {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.notification-card .badge {
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 10px;
+    position: absolute;
+    top: -5px; 
+    right: -5px; 
+}
+
+
+
+.cart {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.cart .icon {
+    font-size: 24px;
+}
+
